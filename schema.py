@@ -4,6 +4,7 @@ from mysql.connector import Error
 def main():
     return
 
+
 def connect_to_my_db():
     return mysql.connector.connect(
         host="localhost",
