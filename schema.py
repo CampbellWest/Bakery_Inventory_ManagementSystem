@@ -29,3 +29,4 @@ def fill_db_with_default_values(mydb):
         except Error as err:
             print(f"{insert_name} creation failed: {err}")
 
+    cursor.close()
