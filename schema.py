@@ -24,6 +24,7 @@ def fill_db_with_default_values(mydb):
     cursor = mydb.cursor()
     for insert_name, insert_query in schema_values.inserts.items():
         try:
+            #print(insert_query)
             cursor.execute(insert_query)
             print(f"Values for '{insert_name}' inserted")
         except Error as err:
